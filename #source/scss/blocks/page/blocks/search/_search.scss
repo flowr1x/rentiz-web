@@ -1,0 +1,41 @@
+@import "./blocks/search__text-search";
+@import "./blocks/search__filter";
+
+.search {
+    padding: 100px 0;
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__content {
+        flex: 0 1 50%;
+        position: relative;
+        margin-bottom: 160px;
+    }
+    &__title {
+        & > *:not(:last-child) {
+            margin: 0 0 18px 0;
+        }
+    }
+    &__label {
+        font-size: clamp(1.5rem, 0.721rem + 3.9vw, 4.25rem);
+        font-weight: 600;
+        line-height: 126%;
+        text-transform: capitalize;
+    }
+    &__filter {
+        position: absolute;
+        bottom: -60px;
+        transform: translate(0, 100%);
+        left: 0;
+        z-index: var(--layout-2);
+    }
+    &__image {
+        flex: 0 1 50%;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
