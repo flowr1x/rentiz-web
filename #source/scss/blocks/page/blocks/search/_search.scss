@@ -2,20 +2,29 @@
 @import "./blocks/search__filter";
 
 .search {
-    padding: 100px 0;
+    padding: clamp(1.25rem, -0.166rem + 7.08vw, 6.25rem) 0;
     &__container {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 30px;
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
     }
     &__content {
         flex: 0 1 50%;
         position: relative;
         margin-bottom: 160px;
+        @media (max-width: 992px) {
+            margin-bottom: 0;
+        }
     }
     &__title {
         & > *:not(:last-child) {
             margin: 0 0 18px 0;
+        }
+        @media (max-width: 992px) {
+            margin-bottom: 20px;
         }
     }
     &__label {
@@ -26,10 +35,16 @@
     }
     &__filter {
         position: absolute;
+        
         bottom: -60px;
         transform: translate(0, 100%);
         left: 0;
         z-index: var(--layout-2);
+        @media (max-width: 992px) {
+            position: static;
+            transform: none;
+            width: 100%;
+        }
     }
     &__image {
         flex: 0 1 50%;
