@@ -1,0 +1,21 @@
+@import "./blocks/title";
+
+.featured {
+    padding: clamp(2rem, -0.619rem + 13.1vw, 11.25rem) 0;
+    &__title {
+        margin: 0 0 clamp(0.938rem, 0.477rem + 2.3vw, 2.563rem) 0;
+    }
+    &__partners {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 150px;
+        overflow-x: auto;
+        @media(max-width: 1450px) {
+            column-gap: 50px;
+        }
+    }
+    &__partner {
+        flex: 0 0 auto;
+    }
+}

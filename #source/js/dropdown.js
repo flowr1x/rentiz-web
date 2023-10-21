@@ -1,6 +1,8 @@
 const filter = document.querySelector(".filter");
+
 if (filter) {
     const blockFilter = filter.querySelectorAll(".block-filter");
+    
     blockFilter.forEach(item => {
         item.addEventListener("click", event => {
             item.querySelector(".block-filter__dropdown").classList.toggle("_active");
