@@ -635,12 +635,27 @@ body {
      object-fit: cover;
 }
 
-.slider-popular__btn {
+.slider-popular {
   position: relative;
+}
+.slider-popular__buttons {
+  position: absolute;
+  top: 30.9%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.slider-popular__btn {
+  position: absolute;
   height: 78px;
   width: 78px;
   border: 1px solid #A9ADB1;
   border-radius: 50%;
+  cursor: pointer;
 }
 .slider-popular__btn::before {
   content: "";
@@ -654,9 +669,15 @@ body {
   width: 16px;
   height: 16px;
 }
-.slider-popular__btn_reverse::before {
-  -webkit-transform: rotate(-45deg) translate(-25%, -85%) scale(-1);
-          transform: rotate(-45deg) translate(-25%, -85%) scale(-1);
+.slider-popular__btn_left {
+  left: -51px;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+.slider-popular__btn_right {
+  right: -51px;
+  -webkit-transform: translate(100%, 0) scale(-1);
+          transform: translate(100%, 0) scale(-1);
 }
 
 .item-popular {
