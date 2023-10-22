@@ -4,17 +4,17 @@
 
 .popular {
     background-color: var(--dark-secondary-clr);
-    padding: 160px 0;
+    padding: clamp(1.875rem, -0.426rem + 11.5vw, 10rem) 0;
     position: relative;
     &__container {
         position: relative;
         z-index: var(--layout-1);
     }
     &__title {
-        margin: 0 0 40px;
+        margin: 0 0 clamp(1.25rem, 0.896rem + 1.77vw, 2.5rem);
     }
     &__slider {
-        margin: 0 0 67px;
+        margin: 0 0 clamp(1.875rem, 1.22rem + 3.27vw, 4.188rem);
     }
     &__image {
         position: absolute;

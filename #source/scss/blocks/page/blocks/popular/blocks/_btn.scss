@@ -5,4 +5,8 @@
     text-transform: capitalize;
     padding: 22px 42px;
     background-color: var(--accent-clr);
+    @media (max-width: 767px) {
+        padding: 11px 21px;
+        font-size: 1rem;
+    }
 }
