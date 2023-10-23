@@ -23,4 +23,18 @@ const swiper2 = new Swiper('.comments__slider', {
     prevEl: '.swiper-button-prev',
   },
 });
-  
+
+const helpItems = document.querySelectorAll('.help__item');
+
+if (helpItems.length > 0) {
+  helpItems.forEach(item => {
+    new Swiper(item, {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      effect: 'fade',
+      slidesPerView: 1,
+    });
+  });
+}
