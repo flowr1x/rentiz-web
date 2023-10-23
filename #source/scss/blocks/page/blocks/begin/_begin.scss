@@ -1,0 +1,40 @@
+.begin {
+    position: relative;
+    padding: clamp(1.875rem, -0.78rem + 13.27vw, 11.25rem) 0;
+    &__container {
+        max-width: 1267px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        @media (max-width: 992px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__title {
+        font-size: clamp(1.25rem, 0.4rem + 4.25vw, 4.25rem);
+        font-weight: 600;
+        line-height: 126%;
+        text-transform: capitalize;
+    }
+    &__body {
+        flex: 0 0 calc(637px / 1237px * 100%);
+    }
+    &__text {
+        margin: 0 0 50px;
+    }
+    &__decor-circle {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translate(-28%, 50%);
+        z-index: -1;
+    }
+    &__decor-square {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(0, -42%);
+    }
+}

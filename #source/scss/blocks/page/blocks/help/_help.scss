@@ -29,7 +29,6 @@
             object-fit: cover;
         }
     }
-    &__info {}
     &__title {
         max-width: 517px;
         &:not(:last-child) {
@@ -39,5 +38,4 @@
     &__text {
         margin: 0 0 45px; 
     }
-    &__button {}
 }
