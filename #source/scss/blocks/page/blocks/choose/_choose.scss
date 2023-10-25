@@ -24,6 +24,7 @@
         position: absolute;
         top: 19%;
         left: 0;
+        max-width: 100%;
         height: clamp(34.375rem, 23.968rem + 52.04vw, 71.125rem);
     }
 }

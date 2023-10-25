@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h5, h6 {
 }
 
 html, body {
-  min-height: 100%;
+  height: 100%;
   width: 100%;
 }
 
@@ -872,6 +872,7 @@ body {
   position: absolute;
   top: 19%;
   left: 0;
+  max-width: 100%;
   height: clamp(34.375rem, 23.968rem + 52.04vw, 71.125rem);
 }
 
@@ -1197,4 +1198,8 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 20px;
+}
+
+.hidden {
+  display: none !important;
 }
